@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@700&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Icon -->
+    <link rel="icon" type="image/x-icon" href="./assets/logo/block-picker-web-logo.svg">
+
+    <title>Block Picker</title>
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand navbar-dark fixed-top" style="background-color: #000016;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"> 
+          <img src="assets/logo/block-picker-web-logo.svg" alt="R logo" width="30" height="24">
+        </a>
+      </div>
+    </nav>
+
+    <!-- -->
+    <div class="container container-space">
+      <div class="row">
+        <div class="col">
+          <div id="custCarousel" class="carousel slide" data-bs-ride="carousel" align="center">
+            
+            <!-- slides -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="img-fluid" src="assets/images/Screenshot_1650577524.png" alt="Hills">
+              </div>
+    
+              <div class="carousel-item">
+                <img class="img-fluid" src="assets/images/Screenshot_1650577737.png" alt="Hills">
+              </div>
+    
+              <div class="carousel-item">
+                <img class="img-fluid" src="assets/images/Screenshot_1650578870.png" alt="Hills">
+              </div>
+
+              <!-- Left right -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#custCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+
+              <button class="carousel-control-next" type="button" data-bs-target="#custCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+
+            </div>
+    
+            <!-- Thumbnails -->
+            <ol class="carousel-indicators list-inline">
+              <li class="list-inline-item active">
+                <a id="carousel-selector-0" class="active" data-bs-slide-to="0" data-bs-target="#custCarousel">
+                  <img src="assets/images/Screenshot_1650577524.png" class="img-fluid">
+                </a>
+              </li>
+    
+              <li class="list-inline-item">
+                <a id="carousel-selector-1" data-bs-slide-to="1" data-bs-target="#custCarousel">
+                  <img src="assets/images/Screenshot_1650577737.png" class="img-fluid">
+                </a>
+              </li>
+    
+              <li class="list-inline-item">
+                <a id="carousel-selector-2" data-bs-slide-to="2" data-bs-target="#custCarousel">
+                  <img src="assets/images/Screenshot_1650578870.png"  class="img-fluid">
+                </a>
+              </li>
+             </ol>
+             
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+    <div class="container pt-5 text-white">
+      <h2 class="fw-light display-3 font-2">Block Picker</h2>
+      <p> Block Picker is an Android app to help Minecraft players choose color palette for their build. The app aims to help Minecraft players find block palettes for their build. A block palette consists of 2 X 3 image bitmaps of minecraft blocks. Users can create and share block palettes with their friends and the community.</p>
+    </div>
+
+    <!-- Privacy Policy -->
+    <div class="container pt-5 text-white">
+      <h2 class="fw-light display-3 font-2">Privacy Policy</h2>
+      <p> Please see our <a style="color:#BB86FC" href="privacy.html" > privacy policy </a> </p>      
+    </div>
+    
+
+    <!-- Footer -->
+    <footer class="text-white text-center text-lg-start pb-2">
+      <!-- Copyright -->
+      <div class="text-center p-3">
+        © 2022 Copyright:
+        <a class="text-white" href="https://ramim.live">ramim.live</a>
+      </div>
+      <!-- Copyright -->
+  </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
