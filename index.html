@@ -25,7 +25,8 @@
 
     <title>Block Picker</title>
   </head>
-  <body>
+
+  <body id="BlockPicker">
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand navbar-dark fixed-top" style="background-color: #000016;">
@@ -33,11 +34,35 @@
         <a class="navbar-brand" href="index.html"> 
           <img src="assets/logo/block-picker-web-logo.svg" alt="R logo" width="30" height="24">
         </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse"  id="navbarNav">
+          <ul class="nav navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#BlockPicker">Block Picker</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Description">Description</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Privacy">Privacy</a>
+            </li>
+          </ul>
+        </div>
+
       </div>
     </nav>
+    
+    <!-- About -->
+    <div class="container container-space text-white">
+      <h2 class="fw-light display-3 font-2">Block Picker</h2>
+    </div>
 
-    <!-- -->
-    <div class="container container-space">
+    <!-- App Screenshots -->
+    <div class="container">
       <div class="row">
         <div class="col">
           <div id="custCarousel" class="carousel slide" data-bs-ride="carousel" align="center">
@@ -45,15 +70,19 @@
             <!-- slides -->
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="img-fluid" src="assets/images/Screenshot_1650577524.png" alt="Hills">
+                <img class="img-fluid" src="assets/images/Screenshot_20220504_001101.png" alt="Hills">
               </div>
     
               <div class="carousel-item">
-                <img class="img-fluid" src="assets/images/Screenshot_1650577737.png" alt="Hills">
+                <img class="img-fluid" src="assets/images/Screenshot_20220504_001158.png" alt="Hills">
               </div>
     
               <div class="carousel-item">
-                <img class="img-fluid" src="assets/images/Screenshot_1650578870.png" alt="Hills">
+                <img class="img-fluid" src="assets/images/Screenshot_20220504_001212.png" alt="Hills">
+              </div>
+
+              <div class="carousel-item">
+                <img class="img-fluid" src="assets/images/Screenshot_20220504_220329.png" alt="Hills">
               </div>
 
               <!-- Left right -->
@@ -73,19 +102,25 @@
             <ol class="carousel-indicators list-inline">
               <li class="list-inline-item active">
                 <a id="carousel-selector-0" class="active" data-bs-slide-to="0" data-bs-target="#custCarousel">
-                  <img src="assets/images/Screenshot_1650577524.png" class="img-fluid">
+                  <img src="assets/images/Screenshot_20220504_001101.png" class="img-fluid">
                 </a>
               </li>
     
               <li class="list-inline-item">
                 <a id="carousel-selector-1" data-bs-slide-to="1" data-bs-target="#custCarousel">
-                  <img src="assets/images/Screenshot_1650577737.png" class="img-fluid">
+                  <img src="assets/images/Screenshot_20220504_001158.png" class="img-fluid">
                 </a>
               </li>
     
               <li class="list-inline-item">
                 <a id="carousel-selector-2" data-bs-slide-to="2" data-bs-target="#custCarousel">
-                  <img src="assets/images/Screenshot_1650578870.png"  class="img-fluid">
+                  <img src="assets/images/Screenshot_20220504_001212.png"  class="img-fluid">
+                </a>
+              </li>
+
+              <li class="list-inline-item">
+                <a id="carousel-selector-2" data-bs-slide-to="3" data-bs-target="#custCarousel">
+                  <img src="assets/images/Screenshot_20220504_220329.png"  class="img-fluid">
                 </a>
               </li>
              </ol>
@@ -95,14 +130,14 @@
       </div>
     </div>
 
-    <!-- About -->
-    <div class="container pt-5 text-white">
-      <h2 class="fw-light display-3 font-2">Block Picker</h2>
+    <!-- Description -->
+    <div class="container pt-5 text-white" id="Description">
+      <h2 class="fw-light display-3 font-2">Description</h2>
       <p> Ever trying to make a build in Minecraft and you just can't find the perfect color palette? Block Picker will help jumpstart your creativity and inspire others! Choose any 6 blocks and put them in a palette that you can share or save for later. Having trouble still? Scroll through other palettes for ideas! This simple app is perfect for any Minecraft builder. Happy gaming!      </p>
     </div>
 
     <!-- Privacy Policy -->
-    <div class="container pt-5 text-white">
+    <div class="container pt-5 text-white" id="Privacy">
       <h2 class="fw-light display-3 font-2">Privacy Policy</h2>
       <p> Please see our <a style="color:#BB86FC" href="privacy.html" > privacy policy </a> </p>      
     </div>
@@ -113,7 +148,7 @@
       <!-- Copyright -->
       <div class="text-center p-3">
         © 2022 Copyright:
-        <a class="text-white" href="https://ramim.live">ramim.live</a>
+        <a class="text-white">rameme</a>
       </div>
       <!-- Copyright -->
   </footer>
